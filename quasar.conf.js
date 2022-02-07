@@ -191,13 +191,13 @@ module.exports = configure(function (ctx) {
     electron: {
       bundler: "packager", // 'packager' or 'builder'
 
-      extendWebpack (cfg) {
+      extendWebpack(cfg) {
         // do something with Electron main process Webpack cfg
         // chainWebpack also available besides this extendWebpack
       },
 
       packager: {
-        platform: 'win32'
+        platform: "win32",
         // https://github.com/electron-userland/electron-packager/blob/master/docs/api.md#options
 
         // OS X / Mac App Store
@@ -209,7 +209,6 @@ module.exports = configure(function (ctx) {
         // Windows only
         // win32metadata: { ... }
       },
-
 
       builder: {
         // https://www.electron.build/configuration/configuration
